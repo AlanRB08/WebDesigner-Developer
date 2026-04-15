@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Alan Reyes — Web Designer & Developer</title>
+  <meta name="description" content="Alan Reyes is a web developer with a focus on frontend — crafting fast, modern, and visually striking digital experiences." />
+  <meta name="keywords" content="Alan Reyes, Frontend Developer, Web Developer, UI Developer, JavaScript, React, Astro, Portfolio" />
+  <meta name="author" content="Alan Reyes" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alanreyes.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alanreyes.dev/" />
+  <meta property="og:title" content="Alan Reyes — Frontend Developer" />
+  <meta property="og:description" content="Web developer with a focus on frontend — crafting fast, modern, and visually striking digital experiences." />
+  <meta property="og:image" content="https://alanreyes.dev/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alan Reyes — Frontend Developer" />
+  <meta name="twitter:description" content="Web developer focused on beautiful, high-performance frontend experiences." />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alan Reyes",
+    "jobTitle": "Frontend Developer",
+    "url": "https://alanreyes.dev",
+    "sameAs": [
+      "https://github.com/alanreyes",
+      "https://linkedin.com/in/alanreyes"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- GSAP + Lenis -->
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  
+
+  
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-logo">ALAN<span>.</span></div>
+    <div class="preloader-bar-track">
+      <div class="preloader-bar-fill" id="preloader-fill"></div>
+    </div>
+    <div class="preloader-num" id="preloader-num">0%</div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="#hero" class="nav-logo">AR<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-num="01">About</a></li>
+      <li><a href="#skills" data-num="02">Skills</a></li>
+      <li><a href="#projects" data-num="03">Projects</a></li>
+      <li><a href="#contact" data-num="04">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-line"></div>
+
+    <p class="hero-eyebrow" id="hero-eyebrow">Creative Web Designer & Developer </p>
+
+    <h1 class="hero-title">
+      <span class="hero-title-line"><span class="hero-title-inner">ALAN</span></span>
+      <span class="hero-title-line"><span class="hero-title-inner"><span class="gold">REYES</span></span></span>
+    </h1>
+
+    <p class="hero-subtitle" id="hero-sub">
+      Creative Web Designer & Developer experienced in building modern, responsive websites using WordPress and modern web technologies.
+    </p>
+
+    <div class="hero-cta-row" id="hero-cta">
+      <a href="#projects" class="btn-primary">
+        <span>View Work</span>
+        <span>→</span>
+      </a>
+      <a href="#contact" class="btn-ghost">Let's talk ↗</a>
+    </div>
+    <!--
+    <div class="hero-counter">
+      <div class="hero-stat" id="stat1">
+        <div class="hero-stat-num"><span id="count1">0</span>+</div>
+        <div class="hero-stat-label">Projects</div>
+      </div>
+      <div class="hero-stat" id="stat2">
+        <div class="hero-stat-num"><span id="count2">0</span>+</div>
+        <div class="hero-stat-label">Years Exp.</div>
+      </div>
+      <div class="hero-stat" id="stat3">
+        <div class="hero-stat-num"><span id="count3">0</span>%</div>
+        <div class="hero-stat-label">Satisfaction</div>
+      </div>
+    </div> -->
+
+    <div class="hero-scroll-label">Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track" id="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>WordPress</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>CSS</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>JavaScript</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Responsive Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UI / UX Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Web Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Figma</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>SEO Basics</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Web Performance</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>WordPress</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>CSS</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>JavaScript</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Responsive Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UI / UX Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Web Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Figma</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>SEO Basics</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Web Performance</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-visual" data-reveal>
+      <div class="about-img-frame">
+        <img class="about-placeholder" src="/images/myself.jpeg" alt="">
+      </div>
+      <div class="about-frame-border"></div>
+      <div class="about-tag">Web Designer & Dev</div>
+    </div>
+
+    <div class="about-text" data-reveal>
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Creative <span>Web Design</span><br>and Development</h2>
+
+<p>I'm <strong>Alan Reyes</strong>, a web designer and developer from Mexico specializing in building modern, responsive websites using <strong>WordPress, clean layouts, and user-focused design</strong>.</p>
+
+<p>My work focuses on delivering <strong>visually appealing, fast, and user-friendly websites</strong> that help businesses present their services clearly and achieve their goals online.</p>
+      
+
+
+      <div class="about-facts">
+        <div class="about-fact">
+          <div class="about-fact-label">Based in</div>
+          <div class="about-fact-val">Mexico 🇲🇽</div>
+        </div>
+        <div class="about-fact">
+          <div class="about-fact-label">Available</div>
+          <div class="about-fact-val">Freelance / Full-time / Partial-time</div>
+        </div>
+        <div class="about-fact">
+          <div class="about-fact-label">Focus</div>
+          <div class="about-fact-val">Web Designer & Developer / UI & UX</div>
+        </div>
+        <div class="about-fact">
+          <div class="about-fact-label">Languages</div>
+          <div class="about-fact-val">ES / EN</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <div id="skills">
+    <div class="skills-inner" style="padding-top:8rem; padding-bottom:8rem;">
+      <div data-reveal>
+        <div class="section-label">Expertise</div>
+        <h2 class="section-title">What I <span>do</span> best</h2>
+      </div>
+      
+      <div class="skills-grid" data-reveal>
+        <div class="skill-card">
+          <span class="skill-card-icon">
+            <img src="/images/wordpress.png" alt="" width="28px" height="28px">
+            <img src="/images/photoshop.png" alt="" width="28px" height="28px">
+            <img src="/images/iconCss.png" alt="" width="28px" height="28px">
+            <img src="/images/iconFigma.png" alt="" width="28px" height="28px">
+          </span>
+          <div class="skill-card-title">UI & Design</div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;font-weight:300;">Translating design concepts into pixel-perfect implementations. Focused on usability and clean visual layout.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Design Systems</span>
+            <span class="skill-tag">Adobe Photoshop</span>
+
+          </div>
+          <!-- 
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>Proficiency</span><span>90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>-->
+        </div>
+        
+        
+        <div class="skill-card">
+          <span class="skill-card-icon">
+            <img src="/images/iconLight.png" alt="" width="28px" height="28px">
+            <img src="/images/iconWebp.png" alt="" width="28px" height="28px">
+            <img src="/images/iconVite.png" alt="" width="28px" height="28px">
+            <img src="/images/iconSEO.png" alt="" width="28px" height="28px">
+          </span>
+          <div class="skill-card-title">Performance</div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;font-weight:300;">Optimizing website speed, image performance, and Core Web Vitals to deliver fast and reliable user experiences.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Lighthouse</span>
+            <span class="skill-tag">WebPack</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">Core Web Vitals</span>
+          </div>
+          
+        </div>
+        <div class="skill-card">
+          <span class="skill-card-icon">
+            <img src="/images/iconGit.png" alt="" width="28px" height="28px">
+            <img src="/images/iconGithub.png" alt="" width="28px" height="28px">
+            <img src="/images/vercel.svg" alt="" width="28px" height="28px">
+            <img src="/images/iconJira.png" alt="" width="28px" height="28px">
+          </span>
+          <div class="skill-card-title">Dev Tools</div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;font-weight:300;">Confident with modern dev workflows — version control, CI/CD, testing, and cloud deployments.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Jira</span>
+          </div>
+          
+        </div>
+        <div class="skill-card">
+          <span class="skill-card-icon">
+            <img src="/images/gsap.svg" alt="" width="28px" height="28px">
+            <img src="/images/motion-js.svg" alt="" width="28px" height="28px">
+          </span>
+          <div class="skill-card-title">Animation & Interactions</div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;font-weight:300;">Creating fluid, purposeful animations that elevate user experience without sacrificing performance.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">GSAP</span>
+            <span class="skill-tag">ScrollTrigger</span>
+            <span class="skill-tag">Framer Motion</span>
+          </div>
+         
+        </div>
+
+        
+
+       
+
+        <div class="skill-card">
+          <span class="skill-card-icon">
+            <img src="/images/iconReact.png" alt="" width="28px" height="28px">
+            <img src="/images/iconData.png" alt="" width="28px" height="28px">
+            <img src="/images/iconType.png" alt="" width="28px" height="28px">
+          </span>
+          <div class="skill-card-title">Web Development</div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;font-weight:300;">Working knowledge of APIs, databases, and server-side rendering to build complete web products.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">MySQL</span>
+          
+          
+          </div>
+         
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header" data-reveal>
+      <div>
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title">Featured <span>projects</span></h2>
+      </div>
+      <!--<a href="#contact" class="btn-ghost" style="margin-bottom:.5rem;">All work →</a>-->
+    </div>
+
+    <div class="projects-list" data-reveal>
+      <a target="_blank" href="https://triasous.com" class="project-item">
+        <div class="project-item-bg"></div>
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <div class="project-name">Triaso Corporate Website</div>
+          <div class="project-meta">
+            <span>2026</span>
+          </div>
+          <div class="project-tags-row">
+            <span class="project-tag">Corporate Website</span>
+            <span class="project-tag">Performance</span>
+            <span class="project-tag">SEO</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a target="_blank" href="https://paulinaseade.com" class="project-item">
+        <div class="project-item-bg"></div>
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <div class="project-name">Photography Portfolio</div>
+          <div class="project-meta">
+            <span>2025</span>
+          </div>
+          <div class="project-tags-row">
+            <span class="project-tag">Landing Page</span>
+            <span class="project-tag">Responsive Layout</span>
+            <span class="project-tag">SEO</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+      <a target="_blank" href="https://nortam.mx/Remolques/" class="project-item">
+        <div class="project-item-bg"></div>
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <div class="project-name">NORTAM</div>
+          <div class="project-meta">
+            <span>2025</span>
+          </div>
+          <div class="project-tags-row">
+            <span class="project-tag">Landing Page</span>
+            <span class="project-tag">Performance</span>
+            <span class="project-tag">SEO</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+      <a target="_blank" href="https://onsoshutters.com" class="project-item">
+        <div class="project-item-bg"></div>
+        <div class="project-num">04</div>
+        <div class="project-info">
+          <div class="project-name">Onso Shutters</div>
+          <div class="project-meta">
+            <span>Shopify + CSS + HTML</span>
+            <span>2025</span>
+          </div>
+          <div class="project-tags-row">
+            <span class="project-tag">Landing Page</span>
+            <span class="project-tag">Performance</span>
+            <span class="project-tag">SEO</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="contact-inner">
+      <div data-reveal>
+        <div class="section-label" style="justify-content:center;">Get in touch</div>
+        <h2 class="contact-big">LET'S<br><span>WORK.</span></h2>
+        <p class="contact-sub">Have a project in mind? Looking for a developer who cares as much about craft as you do? Let's talk.</p>
+        <a href="mailto:alanreyesbueno08@gmail.com" class="contact-email-link">alanreyesbueno08@gmail.com</a>
+      </div>
+
+      <div class="contact-socials" data-reveal>
+        <a href="https://github.com/AlanRB08" class="social-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/alanreyes08/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/cv/FrontendDeveloper_AlanReyes.pdf" target="_blank" class="social-link">CV / Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2025 Alan Reyes <span style="color:var(--gold)">·</span> All rights reserved</span>
+    <span>Made with <span>♥</span> & GSAP</span>
+    <span>Frontend Developer <span>·</span> Mexico</span>
+  </footer>
+  <script src="/myJs.js"></script>
+  
+</body>
+
+</html>
